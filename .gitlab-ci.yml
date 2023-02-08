@@ -1,0 +1,32 @@
+# Select image from https://hub.docker.com
+image: alpine:3.7
+
+# Variables used in CI process
+variables:
+ TIMEZONE: "Europe/Kiev"
+ DOCKER_DRIVER: "overlay"
+ GIT_SSL_NO_VERIFY: "true"
+
+# Select what should cache: composer
+cache:
+  key: $CI_JOB_NAME-$CI_COMMIT_REF_NAME
+  untracked: true
+
+# Define stages (default: build, test, deploy)
+stages:
+# - test
+ - deploy_to_prod
+
+# Actions before run 
+before_script:
+  - eval $(ssh-agent -s)
+# - echo "$PROD_PRIVATE_KEY" | ssh-add - > /dev/null
+
+tashkent.itea.ua:
+  only:
+   - itea-tashkent
+  stage: deploy_to_prod
+  when: on_success
+  script:
+   - echo "$PROD_PRIVATE_KEY" | ssh-add - > /dev/null
+   - ssh -o StrictHostKeyChecking=no "$PROD_USER"@"$PROD_SERVER" -p "$PROD_SSH_PORT" 'cd /var/www/html/itea.uz && sudo -u apache git reset --hard && sudo -u apache git pull origin itea-tashkent'

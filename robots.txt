@@ -1,0 +1,29 @@
+User-agent: *
+
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.gif
+
+Allow: /wp-includes/images/
+Allow: /wp-includes/css/
+Allow: /wp-includes/js/
+
+Allow: /wp-content/themes/*.css
+Allow: /wp-content/themes/*.js
+
+Allow: /wp-content/plugins/*.css
+Allow: /wp-content/plugins/*.js
+Allow: /wp-content/plugins/*.gif
+
+Disallow: /wp-admin
+Disallow: /x-worm
+Disallow: /wp-includes
+Disallow: /wp-content/plugins
+Disallow: /page
+Disallow: /?s=
+Disallow: /?cat=
+Disallow: /?p=
+Disallow: /?page_id=
+Disallow: /onlineacademy
+
+Sitemap: https://itea.ua/sitemap.xml

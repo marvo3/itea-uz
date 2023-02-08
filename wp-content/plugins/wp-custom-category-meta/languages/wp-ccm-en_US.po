@@ -1,0 +1,47 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-07 17:06+0100\n"
+"PO-Revision-Date: 2014-02-07 17:07+0100\n"
+"Last-Translator: Vladislav Musílek <musilekv@seznam.cz>\n"
+"Language-Team: Simple <info@themes4all.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../class-ccm.php:314
+msgid "Custom Category Meta Setting"
+msgstr ""
+
+#: ../class-ccm.php:320
+msgid "Title for Category"
+msgstr ""
+
+#: ../class-ccm.php:325
+msgid "Enter category title tag. If is empty, title not will be owerwrite"
+msgstr ""
+
+#: ../class-ccm.php:331
+msgid "Category Meta Description"
+msgstr ""
+
+#: ../class-ccm.php:336
+msgid ""
+"Enter category description text. If is empty, description not will be "
+"owerwrite"
+msgstr ""
+
+#: ../class-ccm.php:342
+msgid "Category Meta Keywords"
+msgstr ""
+
+#: ../class-ccm.php:347
+msgid "Enter category keywords. If is empty, keywords not will be owerwrite"
+msgstr ""
