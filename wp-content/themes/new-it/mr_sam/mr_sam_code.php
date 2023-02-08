@@ -344,6 +344,10 @@ function getListRoadmaps() {
             case '1320':
                 $courses_order[27] = $key; // Full Stack Java Developer
                 break;
+
+            case '1316':
+                $courses_order[28] = $key; // Системное администрирование
+                break;
             /*default:
                 $courses_order[] = $key;*/
         }
